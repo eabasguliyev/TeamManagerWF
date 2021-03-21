@@ -29,26 +29,26 @@ namespace TeamManager
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnPlayerAbbreviation = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnPlayerPosition = new Guna.UI2.WinForms.Guna2CircleButton();
             this.txtBoxPlayerNumber = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxPlayerName = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2VSeparator2 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.SuspendLayout();
             // 
-            // btnPlayerAbbreviation
+            // btnPlayerPosition
             // 
-            this.btnPlayerAbbreviation.CheckedState.Parent = this.btnPlayerAbbreviation;
-            this.btnPlayerAbbreviation.CustomImages.Parent = this.btnPlayerAbbreviation;
-            this.btnPlayerAbbreviation.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnPlayerAbbreviation.ForeColor = System.Drawing.Color.White;
-            this.btnPlayerAbbreviation.HoverState.Parent = this.btnPlayerAbbreviation;
-            this.btnPlayerAbbreviation.Location = new System.Drawing.Point(87, 12);
-            this.btnPlayerAbbreviation.Name = "btnPlayerAbbreviation";
-            this.btnPlayerAbbreviation.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnPlayerAbbreviation.ShadowDecoration.Parent = this.btnPlayerAbbreviation;
-            this.btnPlayerAbbreviation.Size = new System.Drawing.Size(80, 77);
-            this.btnPlayerAbbreviation.TabIndex = 0;
+            this.btnPlayerPosition.CheckedState.Parent = this.btnPlayerPosition;
+            this.btnPlayerPosition.CustomImages.Parent = this.btnPlayerPosition;
+            this.btnPlayerPosition.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPlayerPosition.ForeColor = System.Drawing.Color.Black;
+            this.btnPlayerPosition.HoverState.Parent = this.btnPlayerPosition;
+            this.btnPlayerPosition.Location = new System.Drawing.Point(87, 12);
+            this.btnPlayerPosition.Name = "btnPlayerPosition";
+            this.btnPlayerPosition.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnPlayerPosition.ShadowDecoration.Parent = this.btnPlayerPosition;
+            this.btnPlayerPosition.Size = new System.Drawing.Size(80, 77);
+            this.btnPlayerPosition.TabIndex = 0;
             // 
             // txtBoxPlayerNumber
             // 
@@ -116,7 +116,7 @@ namespace TeamManager
             this.guna2VSeparator2.Size = new System.Drawing.Size(19, 107);
             this.guna2VSeparator2.TabIndex = 9;
             // 
-            // UCPlayer
+            // UCPlayerInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -124,7 +124,7 @@ namespace TeamManager
             this.Controls.Add(this.guna2VSeparator1);
             this.Controls.Add(this.txtBoxPlayerName);
             this.Controls.Add(this.txtBoxPlayerNumber);
-            this.Controls.Add(this.btnPlayerAbbreviation);
+            this.Controls.Add(this.btnPlayerPosition);
             this.Name = "UCPlayerInfo";
             this.Size = new System.Drawing.Size(1074, 107);
             this.ResumeLayout(false);
@@ -133,7 +133,7 @@ namespace TeamManager
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2CircleButton btnPlayerAbbreviation;
+        private Guna.UI2.WinForms.Guna2CircleButton btnPlayerPosition;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxPlayerNumber;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxPlayerName;
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator1;

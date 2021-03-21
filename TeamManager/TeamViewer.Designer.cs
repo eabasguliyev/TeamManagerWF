@@ -34,9 +34,12 @@ namespace TeamManager
             this.panelGameArea = new System.Windows.Forms.Panel();
             this.labelTactic = new System.Windows.Forms.Label();
             this.pcBoxCountryFlag = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.contextMenuStripTeamViewer = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+            this.showPlayerPositionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelFormControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcBoxBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcBoxCountryFlag)).BeginInit();
+            this.contextMenuStripTeamViewer.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelFormControl
@@ -81,18 +84,18 @@ namespace TeamManager
             this.panelGameArea.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelGameArea.Location = new System.Drawing.Point(0, 149);
             this.panelGameArea.Name = "panelGameArea";
-            this.panelGameArea.Size = new System.Drawing.Size(554, 755);
+            this.panelGameArea.Size = new System.Drawing.Size(554, 665);
             this.panelGameArea.TabIndex = 1;
             // 
             // labelTactic
             // 
             this.labelTactic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelTactic.AutoSize = true;
-            this.labelTactic.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelTactic.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelTactic.ForeColor = System.Drawing.Color.Black;
-            this.labelTactic.Location = new System.Drawing.Point(420, 86);
+            this.labelTactic.Location = new System.Drawing.Point(401, 86);
             this.labelTactic.Name = "labelTactic";
-            this.labelTactic.Size = new System.Drawing.Size(54, 23);
+            this.labelTactic.Size = new System.Drawing.Size(95, 41);
             this.labelTactic.TabIndex = 3;
             this.labelTactic.Text = "Tactic";
             // 
@@ -110,12 +113,37 @@ namespace TeamManager
             this.pcBoxCountryFlag.TabStop = false;
             this.pcBoxCountryFlag.UseTransparentBackground = true;
             // 
+            // contextMenuStripTeamViewer
+            // 
+            this.contextMenuStripTeamViewer.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStripTeamViewer.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showPlayerPositionsToolStripMenuItem});
+            this.contextMenuStripTeamViewer.Name = "contextMenuStripTeamViewer";
+            this.contextMenuStripTeamViewer.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.contextMenuStripTeamViewer.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.contextMenuStripTeamViewer.RenderStyle.ColorTable = null;
+            this.contextMenuStripTeamViewer.RenderStyle.RoundedEdges = true;
+            this.contextMenuStripTeamViewer.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.contextMenuStripTeamViewer.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.contextMenuStripTeamViewer.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.contextMenuStripTeamViewer.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.contextMenuStripTeamViewer.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.contextMenuStripTeamViewer.Size = new System.Drawing.Size(221, 28);
+            // 
+            // showPlayerPositionsToolStripMenuItem
+            // 
+            this.showPlayerPositionsToolStripMenuItem.Name = "showPlayerPositionsToolStripMenuItem";
+            this.showPlayerPositionsToolStripMenuItem.Size = new System.Drawing.Size(220, 24);
+            this.showPlayerPositionsToolStripMenuItem.Text = "Show Player Positions";
+            this.showPlayerPositionsToolStripMenuItem.Click += new System.EventHandler(this.showPlayerPositionsToolStripMenuItem_Click);
+            // 
             // TeamViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(205)))), ((int)(((byte)(84)))));
-            this.ClientSize = new System.Drawing.Size(554, 902);
+            this.ClientSize = new System.Drawing.Size(554, 812);
+            this.ContextMenuStrip = this.contextMenuStripTeamViewer;
             this.Controls.Add(this.pcBoxCountryFlag);
             this.Controls.Add(this.labelTactic);
             this.Controls.Add(this.panelGameArea);
@@ -128,6 +156,7 @@ namespace TeamManager
             this.panelFormControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pcBoxBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcBoxCountryFlag)).EndInit();
+            this.contextMenuStripTeamViewer.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,5 +169,7 @@ namespace TeamManager
         private System.Windows.Forms.Panel panelGameArea;
         private System.Windows.Forms.Label labelTactic;
         private Guna.UI2.WinForms.Guna2PictureBox pcBoxCountryFlag;
+        private Guna.UI2.WinForms.Guna2ContextMenuStrip contextMenuStripTeamViewer;
+        private System.Windows.Forms.ToolStripMenuItem showPlayerPositionsToolStripMenuItem;
     }
 }

@@ -31,6 +31,7 @@ namespace TeamManager
         {
             this.panelFormControl = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pcBoxClose = new System.Windows.Forms.PictureBox();
             this.cmBoxCountries = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cmBoxTactics = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -42,7 +43,8 @@ namespace TeamManager
             this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2VSeparator2 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.buttonCreate = new Guna.UI2.WinForms.Guna2Button();
-            this.pcBoxClose = new System.Windows.Forms.PictureBox();
+            this.btnLoad = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.panelFormControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcBoxClose)).BeginInit();
             this.SuspendLayout();
@@ -71,6 +73,21 @@ namespace TeamManager
             this.label1.Size = new System.Drawing.Size(210, 35);
             this.label1.TabIndex = 1;
             this.label1.Text = "Team Manager";
+            // 
+            // pcBoxClose
+            // 
+            this.pcBoxClose.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pcBoxClose.Image = global::TeamManager.Properties.Resources.close_window;
+            this.pcBoxClose.Location = new System.Drawing.Point(1045, 4);
+            this.pcBoxClose.Margin = new System.Windows.Forms.Padding(2);
+            this.pcBoxClose.Name = "pcBoxClose";
+            this.pcBoxClose.Size = new System.Drawing.Size(45, 42);
+            this.pcBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcBoxClose.TabIndex = 1;
+            this.pcBoxClose.TabStop = false;
+            this.pcBoxClose.Click += new System.EventHandler(this.pcBoxClose_Click);
+            this.pcBoxClose.MouseEnter += new System.EventHandler(this.pcBoxClose_MouseEnter);
+            this.pcBoxClose.MouseLeave += new System.EventHandler(this.pcBoxClose_MouseLeave);
             // 
             // cmBoxCountries
             // 
@@ -127,8 +144,9 @@ namespace TeamManager
             this.cmBoxTactics.Location = new System.Drawing.Point(754, 66);
             this.cmBoxTactics.Name = "cmBoxTactics";
             this.cmBoxTactics.ShadowDecoration.Parent = this.cmBoxTactics;
-            this.cmBoxTactics.Size = new System.Drawing.Size(114, 36);
+            this.cmBoxTactics.Size = new System.Drawing.Size(135, 36);
             this.cmBoxTactics.TabIndex = 1;
+            this.cmBoxTactics.SelectedIndexChanged += new System.EventHandler(this.cmBoxTactics_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -219,20 +237,38 @@ namespace TeamManager
             this.buttonCreate.Text = "Create";
             this.buttonCreate.Click += new System.EventHandler(this.buttonCreate_Click);
             // 
-            // pcBoxClose
+            // btnLoad
             // 
-            this.pcBoxClose.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pcBoxClose.Image = global::TeamManager.Properties.Resources.close_window;
-            this.pcBoxClose.Location = new System.Drawing.Point(1045, 4);
-            this.pcBoxClose.Margin = new System.Windows.Forms.Padding(2);
-            this.pcBoxClose.Name = "pcBoxClose";
-            this.pcBoxClose.Size = new System.Drawing.Size(45, 42);
-            this.pcBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcBoxClose.TabIndex = 1;
-            this.pcBoxClose.TabStop = false;
-            this.pcBoxClose.Click += new System.EventHandler(this.pcBoxClose_Click);
-            this.pcBoxClose.MouseEnter += new System.EventHandler(this.pcBoxClose_MouseEnter);
-            this.pcBoxClose.MouseLeave += new System.EventHandler(this.pcBoxClose_MouseLeave);
+            this.btnLoad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnLoad.CheckedState.Parent = this.btnLoad;
+            this.btnLoad.CustomImages.Parent = this.btnLoad;
+            this.btnLoad.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLoad.ForeColor = System.Drawing.Color.White;
+            this.btnLoad.HoverState.Parent = this.btnLoad;
+            this.btnLoad.Location = new System.Drawing.Point(27, 614);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.ShadowDecoration.Parent = this.btnLoad;
+            this.btnLoad.Size = new System.Drawing.Size(197, 58);
+            this.btnLoad.TabIndex = 9;
+            this.btnLoad.Text = "Load";
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnSave.CheckedState.Parent = this.btnSave;
+            this.btnSave.CustomImages.Parent = this.btnSave;
+            this.btnSave.Enabled = false;
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.HoverState.Parent = this.btnSave;
+            this.btnSave.Location = new System.Drawing.Point(238, 614);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.ShadowDecoration.Parent = this.btnSave;
+            this.btnSave.Size = new System.Drawing.Size(197, 58);
+            this.btnSave.TabIndex = 10;
+            this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // Form1
             // 
@@ -240,6 +276,8 @@ namespace TeamManager
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1095, 695);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.buttonCreate);
             this.Controls.Add(this.guna2VSeparator2);
             this.Controls.Add(this.guna2VSeparator1);
@@ -283,6 +321,8 @@ namespace TeamManager
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator1;
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator2;
         private Guna.UI2.WinForms.Guna2Button buttonCreate;
+        private Guna.UI2.WinForms.Guna2Button btnLoad;
+        private Guna.UI2.WinForms.Guna2Button btnSave;
     }
 }
 

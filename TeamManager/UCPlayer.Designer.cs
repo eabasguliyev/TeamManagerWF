@@ -29,23 +29,23 @@ namespace TeamManager
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnPlayerAbbreviation = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnPlayer = new Guna.UI2.WinForms.Guna2CircleButton();
             this.labelPlayerName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btnPlayerAbbreviation
+            // btnPlayer
             // 
-            this.btnPlayerAbbreviation.CheckedState.Parent = this.btnPlayerAbbreviation;
-            this.btnPlayerAbbreviation.CustomImages.Parent = this.btnPlayerAbbreviation;
-            this.btnPlayerAbbreviation.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnPlayerAbbreviation.ForeColor = System.Drawing.Color.White;
-            this.btnPlayerAbbreviation.HoverState.Parent = this.btnPlayerAbbreviation;
-            this.btnPlayerAbbreviation.Location = new System.Drawing.Point(30, 6);
-            this.btnPlayerAbbreviation.Name = "btnPlayerAbbreviation";
-            this.btnPlayerAbbreviation.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnPlayerAbbreviation.ShadowDecoration.Parent = this.btnPlayerAbbreviation;
-            this.btnPlayerAbbreviation.Size = new System.Drawing.Size(71, 69);
-            this.btnPlayerAbbreviation.TabIndex = 1;
+            this.btnPlayer.CheckedState.Parent = this.btnPlayer;
+            this.btnPlayer.CustomImages.Parent = this.btnPlayer;
+            this.btnPlayer.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPlayer.ForeColor = System.Drawing.Color.White;
+            this.btnPlayer.HoverState.Parent = this.btnPlayer;
+            this.btnPlayer.Location = new System.Drawing.Point(19, 12);
+            this.btnPlayer.Name = "btnPlayer";
+            this.btnPlayer.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnPlayer.ShadowDecoration.Parent = this.btnPlayer;
+            this.btnPlayer.Size = new System.Drawing.Size(71, 69);
+            this.btnPlayer.TabIndex = 1;
             // 
             // labelPlayerName
             // 
@@ -54,7 +54,7 @@ namespace TeamManager
             this.labelPlayerName.BackColor = System.Drawing.Color.Transparent;
             this.labelPlayerName.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelPlayerName.ForeColor = System.Drawing.Color.Black;
-            this.labelPlayerName.Location = new System.Drawing.Point(15, 91);
+            this.labelPlayerName.Location = new System.Drawing.Point(3, 84);
             this.labelPlayerName.Name = "labelPlayerName";
             this.labelPlayerName.Size = new System.Drawing.Size(55, 23);
             this.labelPlayerName.TabIndex = 4;
@@ -62,13 +62,14 @@ namespace TeamManager
             // 
             // UCPlayer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.labelPlayerName);
-            this.Controls.Add(this.btnPlayerAbbreviation);
+            this.Controls.Add(this.btnPlayer);
             this.Name = "UCPlayer";
-            this.Size = new System.Drawing.Size(129, 127);
+            this.Size = new System.Drawing.Size(103, 120);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -76,7 +77,7 @@ namespace TeamManager
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2CircleButton btnPlayerAbbreviation;
+        private Guna.UI2.WinForms.Guna2CircleButton btnPlayer;
         private System.Windows.Forms.Label labelPlayerName;
     }
 }
