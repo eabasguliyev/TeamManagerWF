@@ -54,7 +54,7 @@ namespace TeamManager
             this.labelPlayerName.BackColor = System.Drawing.Color.Transparent;
             this.labelPlayerName.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelPlayerName.ForeColor = System.Drawing.Color.Black;
-            this.labelPlayerName.Location = new System.Drawing.Point(3, 84);
+            this.labelPlayerName.Location = new System.Drawing.Point(25, 84);
             this.labelPlayerName.Name = "labelPlayerName";
             this.labelPlayerName.Size = new System.Drawing.Size(55, 23);
             this.labelPlayerName.TabIndex = 4;
@@ -69,7 +69,7 @@ namespace TeamManager
             this.Controls.Add(this.labelPlayerName);
             this.Controls.Add(this.btnPlayer);
             this.Name = "UCPlayer";
-            this.Size = new System.Drawing.Size(103, 120);
+            this.Size = new System.Drawing.Size(150, 120);
             this.ResumeLayout(false);
             this.PerformLayout();
 

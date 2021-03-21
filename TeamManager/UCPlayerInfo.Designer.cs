@@ -75,6 +75,8 @@ namespace TeamManager
             this.txtBoxPlayerNumber.ShadowDecoration.Parent = this.txtBoxPlayerNumber;
             this.txtBoxPlayerNumber.Size = new System.Drawing.Size(230, 36);
             this.txtBoxPlayerNumber.TabIndex = 1;
+            this.txtBoxPlayerNumber.TextChanged += new System.EventHandler(this.txtBoxPlayerNumber_TextChanged);
+            this.txtBoxPlayerNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxPlayerNumber_KeyPress);
             // 
             // txtBoxPlayerName
             // 
@@ -101,6 +103,7 @@ namespace TeamManager
             this.txtBoxPlayerName.ShadowDecoration.Parent = this.txtBoxPlayerName;
             this.txtBoxPlayerName.Size = new System.Drawing.Size(259, 36);
             this.txtBoxPlayerName.TabIndex = 2;
+            this.txtBoxPlayerName.TextChanged += new System.EventHandler(this.txtBoxPlayerName_TextChanged);
             // 
             // guna2VSeparator1
             // 

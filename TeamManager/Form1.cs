@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using Guna.UI2.WinForms;
@@ -40,7 +41,7 @@ namespace TeamManager
 
         private void pcBoxClose_MouseEnter(object sender, EventArgs e)
         {
-            pcBoxClose.Image = Properties.Resources.red_close_window;
+            pcBoxClose.Image = Properties.Resources.red_close_window_50px;
         }
 
         private void pcBoxClose_MouseLeave(object sender, EventArgs e)
@@ -284,6 +285,7 @@ namespace TeamManager
 
             save.Filter = "Json File (*json) |";
             save.Title = "Type json file name";
+            save.InitialDirectory = $@"{Directory.GetCurrentDirectory()}";
 
             if (save.ShowDialog() == DialogResult.Cancel)
                 return;
@@ -302,6 +304,9 @@ namespace TeamManager
 
             open.Filter = "Json File (*json) |";
             open.Title = "Select json file";
+
+            open.InitialDirectory = $@"{Directory.GetCurrentDirectory()}";
+
 
             if (open.ShowDialog() == DialogResult.Cancel)
                 return;

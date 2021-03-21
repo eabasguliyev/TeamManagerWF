@@ -226,6 +226,7 @@ namespace TeamManager
             this.buttonCreate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonCreate.CheckedState.Parent = this.buttonCreate;
             this.buttonCreate.CustomImages.Parent = this.buttonCreate;
+            this.buttonCreate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(65)))), ((int)(((byte)(98)))));
             this.buttonCreate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonCreate.ForeColor = System.Drawing.Color.White;
             this.buttonCreate.HoverState.Parent = this.buttonCreate;
@@ -234,7 +235,7 @@ namespace TeamManager
             this.buttonCreate.ShadowDecoration.Parent = this.buttonCreate;
             this.buttonCreate.Size = new System.Drawing.Size(197, 58);
             this.buttonCreate.TabIndex = 8;
-            this.buttonCreate.Text = "Create";
+            this.buttonCreate.Text = "Generate";
             this.buttonCreate.Click += new System.EventHandler(this.buttonCreate_Click);
             // 
             // btnLoad
@@ -242,6 +243,7 @@ namespace TeamManager
             this.btnLoad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnLoad.CheckedState.Parent = this.btnLoad;
             this.btnLoad.CustomImages.Parent = this.btnLoad;
+            this.btnLoad.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(43)))), ((int)(((byte)(222)))));
             this.btnLoad.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnLoad.ForeColor = System.Drawing.Color.White;
             this.btnLoad.HoverState.Parent = this.btnLoad;
@@ -259,6 +261,7 @@ namespace TeamManager
             this.btnSave.CheckedState.Parent = this.btnSave;
             this.btnSave.CustomImages.Parent = this.btnSave;
             this.btnSave.Enabled = false;
+            this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(154)))), ((int)(((byte)(136)))));
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.HoverState.Parent = this.btnSave;

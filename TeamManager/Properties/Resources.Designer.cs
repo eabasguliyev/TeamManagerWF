@@ -103,9 +103,9 @@ namespace TeamManager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap red_close_window {
+        internal static System.Drawing.Bitmap red_close_window_50px {
             get {
-                object obj = ResourceManager.GetObject("red_close_window", resourceCulture);
+                object obj = ResourceManager.GetObject("red_close_window_50px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
