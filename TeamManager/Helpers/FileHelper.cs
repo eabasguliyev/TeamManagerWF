@@ -3,6 +3,7 @@ using System.IO;
 using System.Text;
 using System.Windows.Forms;
 using Newtonsoft.Json;
+using TeamManager.Entities;
 
 namespace TeamManager.Helpers
 {

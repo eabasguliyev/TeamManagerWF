@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
-using Newtonsoft.Json;
 
-namespace TeamManager
+namespace TeamManager.Entities
 {
     public class FootballTactic
     {
@@ -76,46 +75,5 @@ namespace TeamManager
             
             return index;
         }
-    }
-
-    public class Tactic
-    {
-        public string CountryName { get; set; }
-        public string Name { get; set; }
-        public List<string> Positions { get; set; }
-
-        [JsonIgnore]
-
-        public List<Point> PositionsLocation { get; set; }
-        [JsonIgnore]
-        public List<string> PositionColors { get; set; }
-        public List<Player> Players { get; set; }
-        public Tactic()
-        {
-            Positions = new List<string>();
-            PositionColors = new List<string>();
-            PositionsLocation = new List<Point>();
-            Players = new List<Player>();
-        }
-    }
-
-    public abstract class Id
-    {
-        public Guid Guid { get; set; }
-
-        protected Id()
-        {
-            Guid = Guid.NewGuid();
-        }
-    }
-    public class Player:Id
-    {
-        public int Number { get; set; }
-        public string Position { get; set; }
-        [JsonIgnore]
-        public Color Color { get; set; }
-        public string Fullname { get; set; }
-        public bool Capitan { get; set; }
-
     }
 }

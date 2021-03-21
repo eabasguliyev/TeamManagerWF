@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Guna.UI2.WinForms;
 using Guna.UI2.WinForms.Suite;
+using TeamManager.Entities;
 using TeamManager.Helpers;
 
 namespace TeamManager

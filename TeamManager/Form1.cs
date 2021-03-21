@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using Guna.UI2.WinForms;
+using TeamManager.Entities;
 using TeamManager.Helpers;
 
 namespace TeamManager
