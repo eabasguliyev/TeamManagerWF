@@ -236,7 +236,7 @@ namespace TeamManager
             {
                 var txtBoxPlayerNumber = this.panelPlayers.Controls[i].Controls["txtBoxPlayerNumber"] as Guna2TextBox;
 
-                for (int j = i + 1; j < this.panelPlayers.Controls.Count - 1; j++)
+                for (int j = i + 1; j < this.panelPlayers.Controls.Count; j++)
                 {
                     var txtBoxPlayerNumber2 = this.panelPlayers.Controls[j].Controls["txtBoxPlayerNumber"] as Guna2TextBox;
 

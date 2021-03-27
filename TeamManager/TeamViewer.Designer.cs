@@ -95,7 +95,7 @@ namespace TeamManager
             this.labelTactic.ForeColor = System.Drawing.Color.Black;
             this.labelTactic.Location = new System.Drawing.Point(401, 86);
             this.labelTactic.Name = "labelTactic";
-            this.labelTactic.Size = new System.Drawing.Size(95, 41);
+            this.labelTactic.Size = new System.Drawing.Size(92, 40);
             this.labelTactic.TabIndex = 3;
             this.labelTactic.Text = "Tactic";
             // 
@@ -151,7 +151,7 @@ namespace TeamManager
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TeamViewer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TeamViewer";
+            this.Text = "Team Viewer";
             this.Load += new System.EventHandler(this.TeamViewer_Load);
             this.panelFormControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pcBoxBack)).EndInit();

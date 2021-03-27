@@ -243,7 +243,7 @@ namespace TeamManager
             this.btnLoad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnLoad.CheckedState.Parent = this.btnLoad;
             this.btnLoad.CustomImages.Parent = this.btnLoad;
-            this.btnLoad.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(43)))), ((int)(((byte)(222)))));
+            this.btnLoad.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(65)))), ((int)(((byte)(98)))));
             this.btnLoad.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnLoad.ForeColor = System.Drawing.Color.White;
             this.btnLoad.HoverState.Parent = this.btnLoad;
@@ -299,7 +299,7 @@ namespace TeamManager
             this.MinimumSize = new System.Drawing.Size(1095, 626);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Team Manager";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelFormControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pcBoxClose)).EndInit();

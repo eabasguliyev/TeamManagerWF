@@ -69,7 +69,7 @@ namespace TeamManager
             this.Controls.Add(this.labelPlayerName);
             this.Controls.Add(this.btnPlayer);
             this.Name = "UCPlayer";
-            this.Size = new System.Drawing.Size(150, 120);
+            this.Size = new System.Drawing.Size(104, 120);
             this.ResumeLayout(false);
             this.PerformLayout();
 
